@@ -1,0 +1,15 @@
+PROGRAM EX07;
+VAR A,B,C;
+BEGIN
+	B :=0; 
+	FOR A:=0 TO 3 DO 
+	BEGIN	
+		B:=B+1;
+		WRITE(B); 
+	END; 
+	FOR C:=10 DOWNTO 8 DO 
+	BEGIN	
+		B:=B-1;
+		WRITE(B); 
+	END; 
+END.

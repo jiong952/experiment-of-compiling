@@ -1,0 +1,7 @@
+PROGRAM E02;
+VAR A;
+BEGIN
+  A:=989;
+  IF A<>985 THEN
+    WRITE(A)
+END.

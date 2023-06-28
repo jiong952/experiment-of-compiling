@@ -1,0 +1,37 @@
+=== COMPILE PL0 ===
+  0 PROGRAM E05; 
+  0 VAR A,SUM; 
+  1 BEGIN 
+  2     SUM:=1; 
+  4     FOR A:=2 STEP A*=2 UNTIL A<=10 DO 
+ 14     SUM*=A; 
+ 20     WRITE(SUM); 
+ 23 END. 
+  0  JMP   0   1
+  1  INI   0   5
+  2  LIT   0   1
+  3  STO   0   4
+  4  LIT   0   2
+  5  STO   0   3
+  6  JMP   0  11
+  7  LOD   0   3
+  8  LIT   0   2
+  9  OPR   0   4
+ 10  STO   0   3
+ 11  LOD   0   3
+ 12  LIT   0  10
+ 13  OPR   0  13
+ 14  JPC   0  20
+ 15  LOD   0   4
+ 16  LOD   0   3
+ 17  OPR   0   4
+ 18  STO   0   4
+ 19  JMP   0   7
+ 20  LOD   0   4
+ 21  OPR   0  14
+ 22  OPR   0  15
+ 23  OPR   0   0
+~~~ RUN PL0 ~~~
+64
+~~~ END PL0 ~~~
+

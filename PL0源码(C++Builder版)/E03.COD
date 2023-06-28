@@ -1,0 +1,32 @@
+=== COMPILE PL0 ===
+  0 PROGRAM E03; 
+  0 VAR A,B; 
+  1 BEGIN 
+  2   A:=985; 
+  4   B:=211; 
+  6   IF A<>211 THEN 
+  9     WRITE(A) 
+ 12   ELSE WRITE(B) 
+ 16 END. 
+  0  JMP   0   1
+  1  INI   0   5
+  2  LIT   0 985
+  3  STO   0   3
+  4  LIT   0 211
+  5  STO   0   4
+  6  LOD   0   3
+  7  LIT   0 211
+  8  OPR   0   9
+  9  JPC   0  14
+ 10  LOD   0   3
+ 11  OPR   0  14
+ 12  OPR   0  15
+ 13  JMP   0  17
+ 14  LOD   0   4
+ 15  OPR   0  14
+ 16  OPR   0  15
+ 17  OPR   0   0
+~~~ RUN PL0 ~~~
+985
+~~~ END PL0 ~~~
+

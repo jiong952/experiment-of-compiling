@@ -1,0 +1,13 @@
+PROGRAM E01;
+BEGIN
+  ELSE;
+  FOR;
+  TO;
+  DOWNTO;
+  RETURN;
+  ++;
+  -=;
+  ++;
+  --;
+  //;
+END.

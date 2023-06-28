@@ -1,0 +1,20 @@
+=== COMPILE PL0 ===
+  0 PROGRAM E01; 
+  0 BEGIN 
+  2   ELSE; 
+  2   FOR; 
+  2   TO; 
+  2   DOWNTO; 
+  2   RETURN; 
+  2   ++; 
+  2   -=; 
+  2   ++; 
+  2   --; 
+  2   //; 
+  2 END. 
+  0  JMP   0   1
+  1  INI   0   3
+  2  OPR   0   0
+~~~ RUN PL0 ~~~
+~~~ END PL0 ~~~
+

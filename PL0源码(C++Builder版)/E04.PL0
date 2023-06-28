@@ -1,0 +1,9 @@
+PROGRAM E04;
+VAR A,B;
+BEGIN
+  A:=985;
+  B:=211;
+  IF A<>985 THEN
+    WRITE(A)
+  ELSE WRITE(B)
+END.

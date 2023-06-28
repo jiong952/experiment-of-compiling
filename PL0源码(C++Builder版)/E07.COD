@@ -1,0 +1,24 @@
+=== COMPILE PL0 ===
+  0 PROGRAM EX07; 
+  0 VAR A,B,C; 
+  1 BEGIN 
+  2 	B :=0;  
+  4 	FOR A:=0 TO 3 DO  
+ 10 	BEGIN	 
+ 10 		B:=B+1; 
+ 14 		WRITE(B);  
+ 17 	END;  
+ 22 	FOR C:=10 DOWNTO 8 DO  
+ 28 	BEGIN	 
+ 28 		B:=B-1; 
+ 32 		WRITE(B);  
+ 35 	END;  
+ 40 END. 
+~~~ RUN PL0 ~~~
+1
+2
+3
+2
+1
+~~~ END PL0 ~~~
+

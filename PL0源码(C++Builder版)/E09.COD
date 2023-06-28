@@ -1,0 +1,13 @@
+=== COMPILE PL0 ===
+  0 PROGRAM E09; 
+  0 VAR A,B,C; 
+  1 BEGIN 
+  2 	A:=1; 
+  4 	B:=2;//DASD 
+  6 	C:=A+B;/* 1+2=3 */ 
+ 10 	WRITE(C); 
+ 13 END. 
+~~~ RUN PL0 ~~~
+3
+~~~ END PL0 ~~~
+

@@ -1,0 +1,8 @@
+PROGRAM E05;
+VAR A,SUM;
+BEGIN
+    SUM:=1;
+    FOR A:=2 STEP A*=2 UNTIL A<=10 DO
+    SUM*=A;
+    WRITE(SUM);
+END.
